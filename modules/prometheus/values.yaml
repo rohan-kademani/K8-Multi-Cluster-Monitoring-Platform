@@ -1,20 +1,16 @@
 fullnameOverride: "prometheus-${cluster_name}"
 
 prometheus:
-  prometheusSpec:
-    externalLabels:
-      cluster: "${cluster_name}"
+  externalLabels:
+    cluster: "${cluster_name}"
 
-    retention: "${retention}"
+  retention: "${retention}"
 
-    thanos:
-      image: quay.io/thanos/thanos:v0.32.5
+  thanos:
+    image: quay.io/thanos/thanos:v0.32.5
 
-    thanosService:
-      enabled: true
-
-    thanosServiceMonitor:
-      enabled: true
+  thanosService:
+    enabled: true
 
 grafana:
   enabled: false
