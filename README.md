@@ -1,4 +1,4 @@
-# K8 Multi-Namespace Monitoring Platform (Terraform + Prometheus + Thanos + Grafana)
+# K8 Multi-Cluster Monitoring Platform (Terraform + Prometheus + Thanos + Grafana)
 
 ## Overview
 
